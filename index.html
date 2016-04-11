@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/city.min.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$("#hd_link").click(function(){
+		$("#popup").show();
+		});
+	$("#x").click(function(){
+		$("#popup").hide();
+		});	
+		
+	//输入框锁定
+	$("#RadioGroup2_0").bind("click",function(){
+		input_text = $("#input_text");
+		$("#input_text").attr({"disabled":"disabled"});
+		$("#input_text").attr({"class":"input phone disabled"});
+		$("#input_text").val("提示文字文字");
+		});
+	$("#RadioGroup2_1").bind("click",function(){
+		$("#input_text").removeAttr("disabled");
+		$("#input_text").attr({"class":"input phone"});
+		$("#input_text").val("");
+		});	
+});	
+</script>
+
+
+        
+<!-- 头部 -->
+<div class="head">
+        <div class="logo"><a href="###"></a></div>
+        <div class="login">
+                <a href="###">登录</a> |
+                <a href="###">免费注册</a> |
+                <a href="###">微信</a>
+                <div class="line"></div>
+                E-Mail：51zhaodi@51zhaodi.com<br />
+                客服热线：400-8888-888 
+        </div>
+</div>
+<!-- 头部 end-->
+<div class="main">
+		<div class="mainbox">
+		<!-- 提交表单 -->        
+        <div class="form">        
+        <form action="" name="form1">
+        <div id="content-wrap">     
+        <div id="content-left" >
+        <div class="liststyle">
+        						<h1 class="title">找地卖地  就上51找地</h1>
+                                <div class="li">
+                                所在省份 
+                                <span id="Province">
+                                    <i>请选择省份</i>
+                                    <ul>
+                                        <li><a href="javascript:void(0)" alt="请选择省份">请选择省份</a></li>
+                                    </ul>
+                                    <input type="hidden" name="cho_Province" value="请选择省份">
+                                </span>
+                                </div>
+                                
+                                <div class="li">
+                                所在市区
+                                <span id="City">
+                                    <i></i>
+                                    <ul>
+                                        <li><a href="javascript:void(0)" alt="请选择城市">请选择城市</a></li>
+                                    </ul>
+                                    <input type="hidden" name="cho_City" value="请选择城市">
+                                </span>
+                                </div>
+                                
+                                <div class="li">
+                                所在区县
+                                <span id="Area">
+                                    <i></i>
+                                    <ul>
+                                        <li><a href="javascript:void(0)" alt="请选择地区">请选择地区</a></li>
+                                    </ul>
+                                    <input type="hidden" name="cho_Area" value="请选择地区">
+                                </span>
+                            	</div>
+                                
+                                <div class="li">联系姓名 <input class="input" id="" name="" type="text" /></div>
+                     			<div class="li">联系电话 <input class="input" id="" name="" type="text" /></div>
+                <!--<div class="city" id="cityul">
+                		<div class="li">所在省份 <input class="input" id="input_arrow1" type="text" value="福建省" /><span class="arrow" name="arrow1"></span></div>
+                        <div class="li">所在市区 <input class="input" id="input_arrow2" type="text" /><span class="arrow" name="arrow2"></span></div>
+                        <div class="li">所在区县 <input class="input" id="input_arrow3" type="text" /><span class="arrow" name="arrow3"></span></div>
+                        <div class="li">联系姓名 <input class="input" id="" name="" type="text" /></div>
+                        <div class="li">联系电话 <input class="input" id="" name="" type="text" /></div>
+                </ul>-->
+           </div>     
+           </div>     
+           <div id="content-right"></div>
+           </div>     
+                <div class="area">
+                		<div class="left">地块面积</div>
+                        <div class="right">
+                        	<label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" />10亩及以下</label>
+                        	<label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" checked="checked" />11~100亩</label>
+                            <label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_2" />101~1000亩</label>
+                            <label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_3" />1001~5000亩</label>
+                            <label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_4" />5001亩以上</label>
+                        </div>
+                </div>
+                <div  class="row">
+                			是否地主本人
+                			<label><input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0"  checked="checked"  />是</label>
+                        	<label><input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1"/>否</label>
+                </div>
+                <div class="row">地主本人电话 <input id="input_text" class="input phone disabled"  name="" type="text" disabled="disabled"  value="提示文字文字" /></div>
+                <div class="btndiv">
+                		<div class="text">请准确填写，我们的客服人员会尽快与您联系。</div>
+                        <input class="sub-btn" name="" type="submit" value="提交" />
+                </div>
+        </form>        
+        </div>
+        
+        <!-- 提交表单 end-->
+        </div>
+</div>
+<!-- 下半部分 -->
+<div class="main2">
+<div class="mainbox2">
+		<div class="d-box1">
+        		<div class="title">扫一扫下方更多精彩等着您</div>
+                <div class="code"></div>
+        </div>
+        <div class="d-box2"><a id="hd_link" class="link" href="###" onclick="popup();">活动规则</a></div>
+        <div class="d-box3">
+        		<h1 class="title">中奖名单</h1>
+                <div class="libox" id="demo">
+                <div id="demo1">
+                <ul>
+                		<li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                        <li>某**<span>138******798</span></li>
+                </ul>
+                <div id="demo2"></div>
+                </div>
+                </div>
+
+ <script type="text/javascript">
+var speed2=30;  //speed2=20用来设置滚动的速度，值越大，滚动的速度越慢。
+var z_gd2=document.getElementById("demo2");//用来生成重复内容的，以实现不间断滚动
+var z_gd1=document.getElementById("demo1");
+var z_gd=document.getElementById("demo");//容器
+z_gd2.innerHTML=z_gd1.innerHTML;
+function Marquee_2(){
+if(z_gd2.offsetTop-z_gd.scrollTop<=0)
+z_gd.scrollTop-=z_gd1.offsetHeight;
+else{
+z_gd.scrollTop++;
+}
+}
+var MyMar2=setInterval(Marquee_2,speed2);
+z_gd.onmouseover=function() {clearInterval(MyMar2)}
+z_gd.onmouseout=function() {MyMar2=setInterval(Marquee_2,speed2)}
+</script>               
+        </div>
+</div>
+</div>
+<!-- 下半部分 end-->
+<!-- 底部 -->
+<div class="footer">
+<a href="###" target="_blank">关于我们</a> |
+<a href="###" target="_blank">媒体报道</a> |
+<a href="###" target="_blank">成为流转机构</a> |
+<a href="###" target="_blank">广告发布</a> |
+<a href="###" target="_blank">网站公告</a> |
+<a href="###" target="_blank">人才招聘</a> 
+<br />
+全国客服热线：400-8888-888-99 <br />
+©2015 版权所有 51找地网 闽ICP备15016296号
+</div>
+<!-- 底部 end-->
+<!-- 弹出层 -->
+<div id="popup" class="popup" style="display:none">
+		<h1><span class="line"></span>活动规则<span class="line"></span><a id="x" class="x" href="###" title="关闭"></a></h1>
+        【征集时间】<br />
+        2016年3月21日~2016年4月18日<br />
+        【征集内容】<br />
+        中国大陆范围内农村土地信息<br />
+        【征集要求】<br />
+        1、土地信息真实有效，包括具体位置，地主联系方式等；<br />
+        2、未在网络发布过；<br />
+        3、土地面积需大于1亩；<br />
+        4、土地性质为非城市用地。<br />
+         【奖励设置】<br />
+        我处将根据您填写的地主号码，与地主联系进行电话核实，确认为真实有效后，登记人可获得10元话费奖励；<br />
+        若为福州市周边地块，我处将与地主联系进行实地考察，确认为真实有效地块，登记人可获得50元话费奖励；<br />
+        您登记的有效地块信息后续若在我处成功交易，您还可以获得更高的奖励（长期有效）。<br />
+        【领奖说明】<br />
+        奖励统一于活动结束后7个工作日内到账；<br />
+        每个手机号码最多可领取三次奖励。<br />
+        【活动声明】<br />
+        活动期间若发现上传的信息存在虚假重复等不符合征集要求的行为，我处有权取消用户奖励资格！<br />
+        如需帮助，欢迎致电51找地客服热线：400 876 1551<br />
+        本次活动最终解释权归51找地。<br />
+</div>
+</body>
+</html>
